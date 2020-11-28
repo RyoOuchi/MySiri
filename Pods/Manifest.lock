@@ -1,0 +1,16 @@
+PODS:
+  - InstantSearchVoiceOverlay (0.2.0)
+
+DEPENDENCIES:
+  - InstantSearchVoiceOverlay
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InstantSearchVoiceOverlay
+
+SPEC CHECKSUMS:
+  InstantSearchVoiceOverlay: fda5920f9b25b503dd7e154ace7a2deb4d034b94
+
+PODFILE CHECKSUM: b1631ecfdd71593e15d173f68eae92583bbfbf78
+
+COCOAPODS: 1.5.3
