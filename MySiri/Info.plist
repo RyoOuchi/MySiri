@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>By allowing this microphone you will have access to the voice recognition software that is used in this app to identify words</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>By allowing speech recognition, you will have all the access needed for this app</string>
 </dict>
 </plist>
