@@ -13,19 +13,17 @@ class saveViewController: UIViewController {
     @IBOutlet weak var basicTango: UITextField!
     @IBOutlet weak var meaning: UITextField!
     var userDefaults: UserDefaults = UserDefaults.standard
-    var tangoarray: [[String]] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        
-        // Do any additional setup after loading the view.
     }
     
+    
+    
     @IBAction func save(_ sender: Any) {
+        var tangoarray: [[String]] = userDefaults.array(forKey: "wordlist") as? [[String]] ?? []
         tangoarray.append([basicTango.text!, meaning.text!])
         userDefaults.set(tangoarray, forKey: "wordlist")
         self.performSegue(withIdentifier: "toHome", sender: self)

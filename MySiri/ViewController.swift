@@ -21,17 +21,13 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
     @IBOutlet var labeltwo: UILabel!
     
     var resulttest = ""
+    var result = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         myButton.backgroundColor = .systemRed
         myButton.setTitleColor(.white, for: .normal)
-    
-       
     }
-    
-
-    
     @IBAction func didTapButton() {
         voiceOverlay.delegate = self
         voiceOverlay.settings.autoStart = false
@@ -40,9 +36,9 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         voiceOverlay.start(on: self, textHandler: { (text, final) in
             print("voice output: \(String(describing: text))")
             self.resulttest = text
-            self.label.text = self.resulttest
-            if self.label.text == "Afternoon" {
-                self.labeltwo.text = "!YAY!"
+            print(self.result)
+            if self.label.text == self.result {
+                self.labeltwo.text = "よくできました！"
             }else{
                 self.labeltwo.text = "もう一回やろう！"
             }

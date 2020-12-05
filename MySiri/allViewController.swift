@@ -11,16 +11,19 @@ class allViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     @IBOutlet var table: UITableView!
     var tango = [[String]]()
+    var word = ""
+    var mean = ""
     var userDefaults: UserDefaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         table.dataSource = self
         table.delegate = self
 
         tango = userDefaults.array(forKey: "wordlist") as? [[String]] ?? []
-
+        self.table.reloadData()
     }
 
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,7 +35,20 @@ class allViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell?.textLabel?.text = tango[indexPath.row][0]
                return cell!
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let bvc: beforeViewController = (segue.destination as? beforeViewController)!
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         word = tango[indexPath.row][0]
+         mean = tango[indexPath.row][1]
+        self.performSegue(withIdentifier: "yay", sender: self)
+       
     }
-}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "yay"{
+        let bvc: beforeViewController = (segue.destination as? beforeViewController)!
+            bvc.word2 = word
+            bvc.txt = mean
+        }
+        
+        
+
+   
+    }}
