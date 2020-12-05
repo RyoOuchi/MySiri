@@ -27,6 +27,8 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         super.viewDidLoad()
         myButton.backgroundColor = .systemRed
         myButton.setTitleColor(.white, for: .normal)
+        
+        label.text = result
     }
     @IBAction func didTapButton() {
         voiceOverlay.delegate = self
@@ -35,11 +37,9 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         voiceOverlay.settings.autoStopTimeout = 2
         voiceOverlay.start(on: self, textHandler: { (text, final) in
             print("voice output: \(String(describing: text))")
-            self.resulttest = text
-            print(self.result)
             if self.label.text == self.result {
                 self.labeltwo.text = "よくできました！"
-            }else{
+            } else {
                 self.labeltwo.text = "もう一回やろう！"
             }
             print("voice output: is it final? \(String(describing: final))")
@@ -48,6 +48,9 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         }, resultScreenHandler: { (text) in
             print("Result Screen: \(text)")
         })
+
          
     }
+    
+    
 }
