@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E7324D40-1203-4FE0-BE36-23B960A0CFBD"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySiri/beforeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "beforeViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - 1b3263de0d7d718c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.labelTango.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - 87a5304866737590"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.labelTango.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - 133702ccf2e4e081"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.labelTango.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - e23ee8c09965fcce"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.labelTango.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - e035682d9229c396"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MySiri.beforeViewController"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "2050FB55-6435-4A5A-81D6-CBF87CE15D80 - 9a78fe0096f1a82c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySiri.beforeViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MySiri.beforeViewController&gt;"
+                  moduleName = "MySiri"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ryo/Desktop/MySiri/MySiri/beforeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "119">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
