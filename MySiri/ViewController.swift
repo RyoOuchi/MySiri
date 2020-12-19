@@ -14,21 +14,23 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
     func recording(text: String?, final: Bool?, error: Error?) {
     }
     
+    @IBOutlet weak var said: UILabel!
     let synthesizer = AVSpeechSynthesizer()
     let voiceOverlay = VoiceOverlayController()
     @IBOutlet var myButton: UIButton!
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet var labeltwo: UILabel!
+    @IBOutlet weak var Label: UILabel!
+    @IBOutlet var Labeltwo: UILabel!
+    
     
     var resulttest = ""
     var result = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myButton.backgroundColor = .systemRed
+        myButton.layer.cornerRadius = 15
         myButton.setTitleColor(.white, for: .normal)
-        
-        label.text = result
+        said.layer.cornerRadius = 30
+
     }
     @IBAction func didTapButton() {
         voiceOverlay.delegate = self
@@ -37,10 +39,12 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         voiceOverlay.settings.autoStopTimeout = 2
         voiceOverlay.start(on: self, textHandler: { (text, final) in
             print("voice output: \(String(describing: text))")
-            if self.label.text == self.result {
-                self.labeltwo.text = "よくできました！"
+            if String(describing: text) == self.result {
+                self.Label.text = String(describing: text)
+                self.Labeltwo.text = "よくできました！"
             } else {
-                self.labeltwo.text = "もう一回やろう！"
+                self.Label.text = String(describing: text)
+                self.Labeltwo.text = "もう一回やろう！"
             }
             print("voice output: is it final? \(String(describing: final))")
         }, errorHandler: { error in
@@ -48,7 +52,6 @@ class ViewController: UIViewController, VoiceOverlayDelegate {
         }, resultScreenHandler: { (text) in
             print("Result Screen: \(text)")
         })
-
          
     }
     

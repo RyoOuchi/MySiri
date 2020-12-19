@@ -9,6 +9,7 @@
 import UIKit
 class allViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var toNewWord: UIButton!
     @IBOutlet var table: UITableView!
     var tango = [[String]]()
     var word = ""
@@ -18,6 +19,7 @@ class allViewController: UIViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        toNewWord.layer.cornerRadius = 15
         
         table.dataSource = self
         table.delegate = self

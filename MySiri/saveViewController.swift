@@ -14,10 +14,11 @@ class saveViewController: UIViewController {
     @IBOutlet weak var meaning: UITextField!
     var userDefaults: UserDefaults = UserDefaults.standard
     
+    @IBOutlet weak var saving: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        saving.layer.cornerRadius = 15
     }
     
     

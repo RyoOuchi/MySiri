@@ -10,6 +10,8 @@ import UIKit
 
 class beforeViewController: UIViewController {
 
+    @IBOutlet weak var toTest: UIButton!
+    @IBOutlet weak var learnMeaning: UIButton!
     @IBOutlet weak var labelTango: UILabel!
     var word2 = ""
     var txt = ""
@@ -19,6 +21,8 @@ class beforeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        toTest.layer.cornerRadius = 20
+        learnMeaning.layer.cornerRadius = 20
         labelTango.text = word2
         // Do any additional setup after loading the view.
     }
@@ -37,7 +41,7 @@ class beforeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "testResults"{
+    if segue.identifier == "testResult"{
     let vc: ViewController = (segue.destination as? ViewController)!
         vc.result = word2
     }
